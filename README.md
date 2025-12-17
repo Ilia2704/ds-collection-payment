@@ -1,6 +1,7 @@
 # ds-collection-payment
 Demo repository with an applied Data Science project for payment prediction using production-ready ML pipelines
 
+```text
 ds-collection-payment/
 ├── README.md
 ├── requirements.txt
@@ -17,3 +18,4 @@ ds-collection-payment/
 │   │   └── expected_value.py
 │   └── pipeline.py
 └── .gitignore
+```
