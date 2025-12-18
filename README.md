@@ -4,18 +4,13 @@ Demo repository with an applied Data Science project for payment prediction usin
 ```text
 ds-collection-payment/
 ├── README.md
+├── 01_collection_payment_prediction.ipynb
+├── 02_collection_payment_amount.ipynb
 ├── requirements.txt
-├── notebooks/
-│   └── payment_two_stage_demo.ipynb
-├── src/
-│   ├── data/
-│   │   └── synthetic_data.py
-│   ├── features/
-│   │   └── preprocessing.py
-│   ├── models/
-│   │   ├── payment_probability.py
-│   │   ├── payment_amount.py
-│   │   └── expected_value.py
-│   └── pipeline.py
-└── .gitignore
+├── transformers/
+│   └── __init__.py
+│   └── __init__.py
+│   └── __init__.py
+│   └── __init__.py
+│   └── __init__.py
 ```
