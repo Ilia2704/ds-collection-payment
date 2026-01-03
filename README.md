@@ -147,6 +147,6 @@ python -m ipykernel install \
 
 
 ## Disclaimer
-This project is intended **for demonstration and educational purposes only**.
+This project is intended **for demonstration purposes only**.
 
 
