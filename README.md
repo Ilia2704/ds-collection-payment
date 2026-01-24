@@ -1,6 +1,19 @@
 # ds-collection-payment
 
-End-to-end demo project for **collection payment prediction** and **payment amount modeling** using synthetic but business-realistic data.
+## Overview
+
+End-to-end credit collections analytics pipeline covering:
+
+- payment event prediction (classification)
+- expected payment amount modeling (regression)
+- portfolio segmentation
+- expected value–based decisioning
+
+Designed as a production-style workflow similar to real microfinance / lending risk systems.
+
+Demonstrates how data science supports operational collections strategy and cash flow forecasting.
+
+Production-style end-to-end project for **collection payment prediction** and **payment amount modeling** using business data.
 
 The repository demonstrates:
 
@@ -69,7 +82,13 @@ Build a **binary classification model** to predict whether a customer will make 
 * Precision / Recall
 * Distribution of predictions by overdue bucket
 
-#### Results (demo-level)
+#### Results 
+
+<img width="576" height="427" alt="image" src="https://github.com/user-attachments/assets/b6a55661-9046-4cfe-8413-669a122896b8" />
+
+<img width="797" height="496" alt="image" src="https://github.com/user-attachments/assets/6ca8e27b-db9e-47cb-b865-0024cfa12061" />
+
+<img width="533" height="406" alt="image" src="https://github.com/user-attachments/assets/177e03e9-1492-444c-83e8-ff02ff2ecac6" />
 
 * Stable ROC AUC and Gini across main product segments
 * Clear monotonic degradation of payment probability with higher overdue buckets
@@ -108,7 +127,11 @@ Estimate the **expected payment amount**, conditional on a payment occurring.
 * Error distribution by overdue bucket
 * Comparison of predicted vs actual payment amounts
 
-#### Results (demo-level)
+#### Results
+
+<img width="852" height="411" alt="image" src="https://github.com/user-attachments/assets/1cf69e2f-71e3-4329-841b-eb31974b3fb7" />
+
+<img width="853" height="306" alt="image" src="https://github.com/user-attachments/assets/6ddcebc3-73e9-4d33-a4fb-1d71a0536128" />
 
 * Reasonable error stability across product segments
 * Higher variance in late overdue buckets (expected behavior)
@@ -133,9 +156,9 @@ python -m ipykernel install \
 
 ---
 
-## Key concepts demonstrated
+## Key concepts 
 
-* Synthetic data generation with realistic distributions
+* Data generation with realistic distributions
 * Overdue bucket logic (`5–30`, `30–60`, `60–90`, `90–180`, `180–360`)
 * Product-level portfolio segmentation
 * Custom feature transformers
@@ -144,9 +167,8 @@ python -m ipykernel install \
   * notebooks (experiments and storytelling)
   * python modules (`transformers/`)
 
-
-
-## Disclaimer
-This project is intended **for demonstration purposes only**.
+Note
+Uses synthetic but statistically realistic data to preserve confidentiality.
+Modeling logic mirrors real-world collection risk pipelines.
 
 
